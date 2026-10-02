@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadun Deshapriya | Full-Stack Software Engineer Portfolio</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Portfolio of Sadun Deshapriya, undergraduate Software Engineering student at SLIIT and Full-Stack Developer skilled in React, Node.js, Spring Boot, and Cloud Technologies.">
+  <meta name="keywords" content="Sadun Deshapriya, Software Engineer, Portfolio, Full-Stack Developer, SLIIT, React, Spring Boot, Node.js, Auspify Internship">
+  <meta name="author" content="Sadun Deshapriya">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Sadun Deshapriya | Software Engineer Portfolio">
+  <meta property="og:description" content="Showcasing modern web and mobile applications, microservices, and software engineering projects.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       Navigation Bar
+       ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" id="nav-brand">
+        <span class="brand-badge">&lt;/&gt;</span>
+        <span>Sadun<span style="color: var(--accent-cyan);">.dev</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle Theme">
+          <i id="theme-icon" class="fas fa-sun"></i>
+        </button>
+        <button class="nav-cta open-resume-btn" id="nav-resume-btn">
+          <i class="fas fa-file-lines"></i> View CV
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       Hero Section
+       ========================================================= -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for Internships & Projects</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <br>
+          <span class="gradient-text">Sadun Deshapriya</span>
+        </h1>
+
+        <div class="hero-role">
+          <span>I build </span>
+          <span class="typing-text" id="typing-element"></span>
+        </div>
+
+        <p class="hero-description">
+          Undergraduate Software Engineering student at <strong>SLIIT</strong> with proven expertise in building scalable web apps, microservices, and mobile solutions using React, Node.js, and Spring Boot.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary" id="hero-explore-projects">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-contact-btn">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+          <button class="btn btn-outline open-resume-btn" id="hero-resume-btn">
+            <i class="fas fa-arrow-down-to-bracket"></i> Review CV
+          </button>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/sandun" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:sandundeshapriya206@gmail.com" class="social-link" title="Email Sadun" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:0767341594" class="social-link" title="Call Sadun" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img src="assets/images/profile.jpg" alt="Sadun Deshapriya - Software Engineer" class="avatar-img">
+          
+          <div class="floating-badge badge-top-right">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="badge-text">
+              <span>Education</span>
+              <strong>SLIIT B.Sc (Hons)</strong>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <i class="fas fa-layer-group"></i>
+            <div class="badge-text">
+              <span>Stack</span>
+              <strong>Full-Stack & Cloud</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       About Section
+       ========================================================= -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Bridging Theory With <span class="gradient-text">Practical Engineering</span></h2>
+        <p class="section-subtitle">Dedicated to creating reliable, production-ready software systems with modern architecture.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-featured">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem;">Software Engineering & Innovation</h3>
+          <p class="about-bio-text">
+            I am an undergraduate Software Engineering student at <strong>SLIIT</strong>, with strong experience in designing and developing scalable, user-centric software applications. Skilled in full-stack development using <strong>React, Node.js, Express, and Spring Boot</strong>, with hands-on experience building responsive frontends, robust backend APIs, and end-to-end application workflows.
+          </p>
+          <p class="about-bio-text">
+            Experienced in translating requirements into efficient, maintainable code through system design, problem-solving, and modern development practices. Currently working as a <strong>Fiverr freelancer and YouTube content creator</strong>, gaining real-world exposure to client-based software projects, application optimization, and production-level development.
+          </p>
+          
+          <div class="about-stat-row">
+            <div class="stat-item">
+              <span class="stat-number" data-count="5" data-suffix="+">5+</span>
+              <span class="stat-label">Production Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="15" data-suffix="+">15+</span>
+              <span class="stat-label">Technologies Mastered</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="100" data-suffix="%">100%</span>
+              <span class="stat-label">Code Dedication</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="2" data-suffix="+">2+</span>
+              <span class="stat-label">Years Hands-On</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-details">
+          <div class="education-box">
+            <div class="education-header">
+              <h4 class="education-title">BSc (Hons) in Information Technology</h4>
+              <span class="education-period">Nov 2023 – Present</span>
+            </div>
+            <div class="education-school">Sri Lanka Institute of Information Technology (SLIIT)</div>
+            <div class="education-grade">Specialising in Software Engineering &bull; CGPA: 2.73 / 4.00</div>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.75rem;">
+              Comprehensive curriculum focusing on Software Architecture, Object-Oriented Design, Database Systems, Cloud Computing, and Enterprise Application Development.
+            </p>
+          </div>
+
+          <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="contact-card" style="padding: 1.25rem;">
+              <div class="contact-icon" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Location</h4>
+                <p>Matara, Sri Lanka (Open to remote & onsite)</p>
+              </div>
+            </div>
+
+            <div class="contact-card" style="padding: 1.25rem;">
+              <div class="contact-icon" style="width: 44px; height: 44px; font-size: 1.2rem;">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="contact-detail">
+                <h4>Primary Specialization</h4>
+                <p>Full-Stack Web & Microservices Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       Skills Section
+       ========================================================= -->
+  <section id="skills" style="background: rgba(0, 0, 0, 0.15);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">A balanced toolkit spanning modern frontend architectures, backend services, and DevOps.</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Category 1: Programming & Scripting -->
+        <div class="skill-category-card">
+          <div class="skill-card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-category-title">Programming & Scripting</h3>
+          <div class="skill-badges">
+            <span class="skill-chip"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+            <span class="skill-chip"><i class="fab fa-java" style="color: #f89820;"></i> Java</span>
+            <span class="skill-chip"><i class="fas fa-code" style="color: #3178c6;"></i> TypeScript</span>
+            <span class="skill-chip"><i class="fab fa-php" style="color: #777bb4;"></i> PHP</span>
+            <span class="skill-chip"><i class="fas fa-database" style="color: #336791;"></i> SQL</span>
+            <span class="skill-chip"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</span>
+            <span class="skill-chip"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</span>
+            <span class="skill-chip"><i class="fas fa-file-code" style="color: #e44d26;"></i> XML</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Frameworks & Libraries -->
+        <div class="skill-category-card">
+          <div class="skill-card-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 class="skill-category-title">Frameworks & Libraries</h3>
+          <div class="skill-badges">
+            <span class="skill-chip"><i class="fab fa-react" style="color: #61dafb;"></i> React.js</span>
+            <span class="skill-chip"><i class="fas fa-bolt" style="color: #ffffff;"></i> Next.js</span>
+            <span class="skill-chip"><i class="fas fa-leaf" style="color: #6db33f;"></i> Spring Boot</span>
+            <span class="skill-chip"><i class="fab fa-node-js" style="color: #68a063;"></i> Node.js</span>
+            <span class="skill-chip"><i class="fas fa-server" style="color: #90c53f;"></i> Express.js</span>
+            <span class="skill-chip"><i class="fas fa-wind" style="color: #38bdf8;"></i> Tailwind CSS</span>
+            <span class="skill-chip"><i class="fab fa-bootstrap" style="color: #7952b3;"></i> Bootstrap</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases & DevOps -->
+        <div class="skill-category-card">
+          <div class="skill-card-icon">
+            <i class="fas fa-cloud-arrow-up"></i>
+          </div>
+          <h3 class="skill-category-title">Databases & Cloud</h3>
+          <div class="skill-badges">
+            <span class="skill-chip"><i class="fas fa-leaf" style="color: #47a248;"></i> MongoDB</span>
+            <span class="skill-chip"><i class="fas fa-database" style="color: #00758f;"></i> MySQL</span>
+            <span class="skill-chip"><i class="fab fa-docker" style="color: #2496ed;"></i> Docker</span>
+            <span class="skill-chip"><i class="fas fa-dharmachakra" style="color: #326ce5;"></i> Kubernetes</span>
+            <span class="skill-chip"><i class="fas fa-network-wired" style="color: #e535ab;"></i> Apache Kafka</span>
+            <span class="skill-chip"><i class="fas fa-server" style="color: #009639;"></i> Nginx</span>
+            <span class="skill-chip"><i class="fas fa-code-branch" style="color: #f05032;"></i> CI/CD Pipelines</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Tools & Architecture -->
+        <div class="skill-category-card">
+          <div class="skill-card-icon">
+            <i class="fas fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="skill-category-title">Tools & Architecture</h3>
+          <div class="skill-badges">
+            <span class="skill-chip"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+            <span class="skill-chip"><i class="fas fa-terminal" style="color: #007acc;"></i> VS Code</span>
+            <span class="skill-chip"><i class="fas fa-laptop" style="color: #000000;"></i> IntelliJ IDEA</span>
+            <span class="skill-chip"><i class="fab fa-android" style="color: #3ddc84;"></i> Android Studio</span>
+            <span class="skill-chip"><i class="fab fa-figma" style="color: #f24e1e;"></i> Figma</span>
+            <span class="skill-chip"><i class="fab fa-jira" style="color: #0052cc;"></i> Jira</span>
+            <span class="skill-chip"><i class="fas fa-lock" style="color: #f59e0b;"></i> JWT Auth</span>
+            <span class="skill-chip"><i class="fas fa-credit-card" style="color: #635bff;"></i> Stripe Integration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       Projects Showcase Section
+       ========================================================= -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Portfolio</span>
+        <h2 class="section-title">Selected <span class="gradient-text">Engineering Projects</span></h2>
+        <p class="section-subtitle">Real-world applications showcasing scalable architecture, microservices, and sleek user experiences.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="microservices">Microservices & APIs</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: Janaya360 -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-thumbnail">
+            <img src="assets/images/project-janaya360.jpg" alt="Janaya360 Political Promises Tracker">
+            <span class="project-category-tag">Full-Stack Civic Tech</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Janaya360 Political Promises Tracker</h3>
+            <p class="project-desc">
+              Civic transparency platform (JusticeLink) to track political promises, parliamentary attendance, public feedback, notifications, and breaking news with JWT authentication and OTP verification.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Vercel & Render</span>
+            </div>
+            <div class="project-actions">
+              <button class="project-view-btn view-project-details" data-project="janaya360">
+                View Details <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="project-ext-link" title="GitHub Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Smart Health Care System -->
+        <article class="project-card" data-category="microservices fullstack">
+          <div class="project-thumbnail">
+            <img src="assets/images/project-healthcare.jpg" alt="Smart Health Care System">
+            <span class="project-category-tag">Microservices</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Smart Health Care Management System</h3>
+            <p class="project-desc">
+              Microservices-based healthcare application engineered using Spring Boot, containerized with Docker, integrating Stripe payments, and served via React and Nginx for high scalability.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Microservices</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe</span>
+              <span class="tech-tag">Nginx</span>
+            </div>
+            <div class="project-actions">
+              <button class="project-view-btn view-project-details" data-project="healthcare">
+                View Details <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="project-ext-link" title="GitHub Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Wellness Mobile Application -->
+        <article class="project-card" data-category="mobile microservices">
+          <div class="project-thumbnail">
+            <img src="assets/images/project-wellness.jpg" alt="Wellness Mobile Application">
+            <span class="project-category-tag">Android & Kafka</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Wellness Mobile Application</h3>
+            <p class="project-desc">
+              Native Android application built in Kotlin with Gradle automation, connected to Spring Boot REST microservices with Apache Kafka streaming for health metrics and notifications.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">REST APIs</span>
+            </div>
+            <div class="project-actions">
+              <button class="project-view-btn view-project-details" data-project="wellness">
+                View Details <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="project-ext-link" title="GitHub Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Habit Tracker Mobile Application -->
+        <article class="project-card" data-category="mobile fullstack">
+          <div class="project-thumbnail">
+            <img src="assets/images/project-wellness.jpg" alt="Habit Tracker Mobile Application">
+            <span class="project-category-tag">Mobile + Gemini AI</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Habit Tracker & Peer Learning App</h3>
+            <p class="project-desc">
+              Role-based peer-learning application integrating the Google Gemini API for automated Sinhala-to-English translation, full CRUD operations, and persistent local storage.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Google Gemini API</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Figma</span>
+            </div>
+            <div class="project-actions">
+              <button class="project-view-btn view-project-details" data-project="habittracker">
+                View Details <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="project-ext-link" title="GitHub Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Pet Care System -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-thumbnail">
+            <img src="assets/images/project-janaya360.jpg" alt="Pet Care System">
+            <span class="project-category-tag">Full-Stack Web</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Pet Care Management Platform</h3>
+            <p class="project-desc">
+              Role-based pet care platform implementing patient record management, appointments, CRUD workflows, responsive frontends, and backend database integrations.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Shared Preferences</span>
+            </div>
+            <div class="project-actions">
+              <button class="project-view-btn view-project-details" data-project="petcare">
+                View Details <i class="fas fa-arrow-right"></i>
+              </button>
+              <div class="project-links">
+                <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="project-ext-link" title="GitHub Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       Experience & References Section
+       ========================================================= -->
+  <section id="experience" style="background: rgba(0, 0, 0, 0.15);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career & Credibility</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Journey & References</span></h2>
+        <p class="section-subtitle">Practical industry exposure coupled with strong academic mentorship at SLIIT.</p>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Professional Timeline -->
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.6rem;">
+            <i class="fas fa-briefcase" style="color: var(--accent-cyan);"></i> Practical Experience
+          </h3>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4 class="timeline-role">Freelance Software Engineer</h4>
+              <div class="timeline-company">Fiverr Platform & Independent Clients</div>
+              <p class="timeline-desc">
+                Translating client requirements into clean, scalable web applications and APIs. Delivering client-based software projects, performance tuning, and responsive UI implementations.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4 class="timeline-role">Tech Content Creator</h4>
+              <div class="timeline-company">YouTube Developer Community</div>
+              <p class="timeline-desc">
+                Producing tutorials and guides covering software development concepts, backend architectures, modern frameworks, and problem-solving strategies for aspiring developers.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <h4 class="timeline-role">Software Engineering Undergraduate</h4>
+              <div class="timeline-company">Sri Lanka Institute of Information Technology (SLIIT)</div>
+              <p class="timeline-desc">
+                Nov 2023 – Present. Developing high-concurrency microservices, database schemas, and modern web architectures with team collaboration and Agile workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic References -->
+        <div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.6rem;">
+            <i class="fas fa-user-check" style="color: var(--accent-cyan);"></i> Academic References
+          </h3>
+
+          <div class="reference-card">
+            <h4 class="reference-name">Mrs. Suriya Kumari</h4>
+            <div class="reference-role">Senior Lecturer, SLIIT</div>
+            <div class="reference-contact">
+              <div><i class="fas fa-phone" style="color: var(--accent-cyan); width: 20px;"></i> +94 76 186 7558</div>
+              <div><i class="fas fa-envelope" style="color: var(--accent-cyan); width: 20px;"></i> suriyaa.k@sliit.lk</div>
+            </div>
+          </div>
+
+          <div class="reference-card">
+            <h4 class="reference-name">Mr. Ravi Supunya</h4>
+            <div class="reference-role">Senior Lecturer, SLIIT</div>
+            <div class="reference-contact">
+              <div><i class="fas fa-phone" style="color: var(--accent-cyan); width: 20px;"></i> +94 71 108 6684</div>
+              <div><i class="fas fa-envelope" style="color: var(--accent-cyan); width: 20px;"></i> ravi.s@sliit.lk</div>
+            </div>
+          </div>
+
+          <div class="reference-card" style="background: rgba(0, 242, 254, 0.05); border-color: rgba(0, 242, 254, 0.2);">
+            <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--accent-cyan);">
+              <i class="fas fa-file-pdf"></i> Complete Resume Available
+            </h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Access my fully formatted CV containing all details, grades, project stacks, and references.
+            </p>
+            <button class="btn btn-outline open-resume-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+              Preview & Print CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       Contact Section
+       ========================================================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Interested in collaborating or discussing opportunities? Send me a message!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Contacts -->
+        <div class="contact-info-cards">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Email</h4>
+              <a href="mailto:sandundeshapriya206@gmail.com">sandundeshapriya206@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Phone</h4>
+              <a href="tel:0767341594">+94 76 734 1594</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>Location</h4>
+              <p>Matara, Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>GitHub</h4>
+              <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer">github.com/sandun_deshapriya</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-detail">
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/sandun" target="_blank" rel="noopener noreferrer">linkedin.com/in/sandun</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-wrapper">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem;">Send a Direct Message</h3>
+          
+          <div id="form-status" class="form-status"></div>
+
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="e.g. john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject *</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Internship Opportunity / Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="submit-contact-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       Footer
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        <p>&copy; 2026 <strong>Sadun Deshapriya</strong>. All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">
+          Designed & Built for Auspify Technologies Full Stack Development Internship Program &bull; Task 1
+        </p>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <div class="social-links">
+          <a href="https://github.com/sandun_deshapriya" target="_blank" rel="noopener noreferrer" class="social-link" style="width: 36px; height: 36px; font-size: 1rem;"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/sandun" target="_blank" rel="noopener noreferrer" class="social-link" style="width: 36px; height: 36px; font-size: 1rem;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:sandundeshapriya206@gmail.com" class="social-link" style="width: 36px; height: 36px; font-size: 1rem;"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a href="#home" class="back-to-top" title="Back to top" aria-label="Back to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       Project Detail Modal
+       ========================================================= -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="project-modal-body">
+        <!-- Content injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       Resume / CV Preview Modal
+       ========================================================= -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true">
+    <div class="modal-container" style="max-width: 850px;">
+      <button class="modal-close-btn" id="resume-modal-close-btn" aria-label="Close dialog">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h3 style="font-size: 1.4rem; font-weight: 700;">Curriculum Vitae</h3>
+        <button id="print-resume-btn" class="btn btn-secondary" style="padding: 0.4rem 1rem; font-size: 0.85rem;">
+          <i class="fas fa-print"></i> Print / Save as PDF
+        </button>
+      </div>
+
+      <div class="resume-paper" id="printable-resume">
+        <div class="resume-header">
+          <h2>Sadun Deshapriya</h2>
+          <div class="resume-meta">
+            <span><i class="fas fa-location-dot"></i> Matara, Sri Lanka</span>
+            <span><i class="fas fa-phone"></i> 0767341594</span>
+            <span><i class="fas fa-envelope"></i> sandundeshapriya206@gmail.com</span>
+            <span><i class="fab fa-github"></i> github.com/sandun_deshapriya</span>
+            <span><i class="fab fa-linkedin"></i> linkedin.com/in/sandun</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="resume-section-title">Summary</h4>
+          <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.95rem;">
+            I am an undergraduate Software Engineering student at SLIIT, with strong experience in designing and developing scalable, user-centric software applications. Skilled in full-stack development using React, Node.js, and Spring Boot, with hands-on experience building responsive frontends, robust backend APIs, and end-to-end application workflows. Experienced in translating requirements into efficient, maintainable code through system design, problem-solving, and modern development practices. Currently working as a Fiverr freelancer and YouTube content creator, gaining real-world exposure to client-based software projects, application optimization, and production-level development.
+          </p>
+
+          <h4 class="resume-section-title">Education</h4>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+            <strong>Sri Lanka Institute of Information Technology (SLIIT)</strong>
+            <span style="font-family: var(--font-mono); color: var(--accent-cyan);">Nov 2023 – Present</span>
+          </div>
+          <div style="color: var(--text-secondary); font-size: 0.9rem;">
+            BSc (Hons) in Information Technology Specialising in Software Engineering &bull; CGPA: 2.73 / 4.00
+          </div>
+
+          <h4 class="resume-section-title">Key Projects</h4>
+          
+          <div style="margin-bottom: 1rem;">
+            <div style="font-weight: 700;">Janaya360 Political Promises Tracker (JusticeLink Platform)</div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+              Developed a full-stack civic transparency platform using React, Node.js, Express.js, and MongoDB to track political promises, parliamentary attendance, public feedback, notifications, and news. Implemented JWT-based authentication, role-based access control, RESTful APIs, News API, and SMTP for notifications and OTP verification. Deployed using Vercel (frontend) and Render (backend).
+            </p>
+            <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 0.25rem;">
+              Technologies: MongoDB | Express.js | Node.js | React.js | Tailwind CSS | Postman | JWT Auth
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="font-weight: 700;">Smart Health Care System</div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+              Developed a microservices-based healthcare application using Spring Boot, implementing JWT authentication, patient management, and appointment services. Containerized the application with Docker and integrated a React frontend through Nginx for scalable deployment.
+            </p>
+            <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 0.25rem;">
+              Technologies: React.js | Spring Boot | MongoDB | Microservices | Docker | JWT | Stripe
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="font-weight: 700;">Wellness Mobile Application</div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+              Developed a native Android application using Kotlin and Android Studio with Gradle for build automation. Designed and implemented a modular mobile application following Android development best practices.
+            </p>
+            <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 0.25rem;">
+              Technologies: Java | Spring Boot | REST APIs | MySQL | Kafka | Postman
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1rem;">
+            <div style="font-weight: 700;">Habit Tracker Mobile Application</div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.2rem;">
+              Role-based peer-learning platform using Node.js, Express.js, and MongoDB, implementing JWT authentication, authorization, full CRUD operations, and Google Gemini API integration for automated Sinhala-to-English translation.
+            </p>
+            <div style="font-size: 0.8rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 0.25rem;">
+              Technologies: Kotlin | Figma | Shared Preferences | Gemini API
+            </div>
+          </div>
+
+          <h4 class="resume-section-title">Technical Skills</h4>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.9rem; color: var(--text-secondary);">
+            <li><strong>Programming & Scripting:</strong> JavaScript, Java, TypeScript, PHP, SQL, HTML, CSS, XML</li>
+            <li><strong>Frameworks & Libraries:</strong> React.js, Next.js, Spring Boot, Express.js, Node.js, Tailwind CSS, Bootstrap</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL</li>
+            <li><strong>DevOps & Cloud Technologies:</strong> Docker, Kubernetes, Git, CI/CD, Docker Compose</li>
+            <li><strong>Tools & Platforms:</strong> GitHub, Visual Studio Code, IntelliJ IDEA, Android Studio, Figma, Eclipse, Jira</li>
+          </ul>
+
+          <h4 class="resume-section-title">References</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; font-size: 0.9rem; color: var(--text-secondary);">
+            <div>
+              <strong>Mrs. Suriya Kumari</strong><br>
+              Senior Lecturer, SLIIT<br>
+              +94 76 186 7558 &bull; suriyaa.k@sliit.lk
+            </div>
+            <div>
+              <strong>Mr. Ravi Supunya</strong><br>
+              Senior Lecturer, SLIIT<br>
+              +94 71 108 6684 &bull; ravi.s@sliit.lk
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
